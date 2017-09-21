@@ -5,9 +5,9 @@ package com.theironyard;
  */
 public interface SampleInterface {
 
-    public static String sayHey() {
+    static String sayHey() {
         return "hey";
     }
 
-    public String doSomething(String name);
+    String doSomething(String name);
 }

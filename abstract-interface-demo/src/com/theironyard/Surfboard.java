@@ -39,8 +39,13 @@ public class Surfboard extends Boards {
         this.tailType = tailType;
     }
 
+    public String ride(int lengthOfRide) {
+
+        return "Cool, im riding a surfboard! catchin waves dude! I rode that wave for " + lengthOfRide + " seconds";
+    }
+
     public String ride() {
-        return "Cool, im riding a " + getType();
+        return "Im being a good subclass, and not giving any parameters to this method, ride()";
     }
 
     @Override
