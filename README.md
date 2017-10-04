@@ -6,6 +6,7 @@ This repository houses some small demos demonstrating concepts in Java.
 
 I've made efforts to livestream some `these review lectures and have provided the corresponding video for the listed folder in this repo.
 
+- `sql-db-intro` [Video](https://youtu.be/wUtWmHBq3Gs)
 - `web-demo` - [Video](https://youtu.be/aSOvgnpbqx4)
 - `spring-demo` - [Video](https://youtu.be/RZkw6DAU3Lo)
 - `lamda-demo/` - [Video](https://youtu.be/FyuoyvGDsBM)
