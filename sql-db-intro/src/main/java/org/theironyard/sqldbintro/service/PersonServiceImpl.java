@@ -16,16 +16,20 @@ public class PersonServiceImpl implements PersonService {
 
     @Transactional
     @Override
-    public void add(Person person) {
-        personRepository.add(person);
+    public void add(Person peep) {
+        personRepository.add(peep);
     }
 
     @Transactional
     @Override
-    public void add(List<Person> people) {
-        for(Person person : people) {
-            personRepository.add(person);
-        }
+    public void add(List<Person> peeps) {
+
+        peeps.stream()
+             .forEach((peep) -> personRepository.add(peep));
+
+//        for(Person person : peeps) {
+//            personRepository.add(person);
+//        }
 
     }
 
@@ -55,5 +59,14 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public void delete(int id) {
         personRepository.delete(id);
+    }
+
+    @Transactional
+    @Override
+    public void delete(List<Person> people) {
+        for(Person person : people) {
+            personRepository.delete(person.getId());
+        }
+
     }
 }

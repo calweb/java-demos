@@ -2,7 +2,6 @@ package org.theironyard.sqldbintro.repository;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.session.SessionProperties;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -23,7 +22,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     @Override
     public void add(Person person) {
 
-        jdbcTemplate.update(ADD_SQL, person.getFirstName(), person.getLastname());
+        jdbcTemplate.update(ADD_SQL, person.getFirstName(), person.getLastName());
 
     }
 
@@ -42,7 +41,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     private final String UPDATE_SQL = "UPDATE persons SET firstName=?, lastName=? WHERE id=?";
     @Override
     public void update(Person person) {
-        jdbcTemplate.update(UPDATE_SQL, person.getFirstName(), person.getLastname(), person.getId());
+        jdbcTemplate.update(UPDATE_SQL, person.getFirstName(), person.getLastName(), person.getId());
     }
 
     private final String UPDATE_FIRST_NAME_SQL = "UPDATE persons SET firstName=? WHERE id=?";
@@ -66,7 +65,7 @@ public class PersonRepositoryImpl implements PersonRepository {
             Person person = new Person();
             person.setId(rs.getInt("id"));
             person.setFirstName(rs.getString("firstName"));
-            person.setLastname(rs.getString("lastName"));
+            person.setLastName(rs.getString("lastName"));
 
             return person;
         }

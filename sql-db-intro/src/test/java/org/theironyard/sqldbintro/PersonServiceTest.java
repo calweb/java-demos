@@ -46,7 +46,7 @@ public class PersonServiceTest {
 
         people = personService.get();
         Person person1Retrieved =
-                findInList(people, person1.getFirstName(), person1.getLastname());
+                findInList(people, person1.getFirstName(), person1.getLastName());
         Assert.assertNull("The first person created should have rolled back",
                 person1Retrieved);
     }

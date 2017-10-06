@@ -1,5 +1,6 @@
 package org.theironyard.sqldbintro;
 
+import org.junit.After;
 import org.theironyard.sqldbintro.model.Person;
 import org.theironyard.sqldbintro.repository.PersonRepository;
 import org.junit.Assert;
@@ -22,6 +23,11 @@ public class PersonRepositoryTest {
     @Autowired
     PersonRepository personRepository;
 
+    @After
+    public void deleteData() {
+        List<Person> removeThesePeeps = personRepository.get();
+        removeThesePeeps.stream().forEach((peep) -> personRepository.delete(peep.getId()));
+    }
     @Test
     public void testAddGet() {
         // Get unique names every time this test runs
@@ -30,7 +36,7 @@ public class PersonRepositoryTest {
 
         Person person1 = new Person();
         person1.setFirstName(firstName);
-        person1.setLastname(lastName);
+        person1.setLastName(lastName);
         personRepository.add(person1);
 
         List<Person> people = personRepository.get();
@@ -41,7 +47,7 @@ public class PersonRepositoryTest {
         Person person3 = personRepository.getById(person2.getId());
         Assert.assertNotNull(person3);
         Assert.assertEquals(firstName, person3.getFirstName());
-        Assert.assertEquals(lastName, person3.getLastname());
+        Assert.assertEquals(lastName, person3.getLastName());
     }
 
     @Test
@@ -51,14 +57,14 @@ public class PersonRepositoryTest {
 
         List<Person> people = personRepository.get();
 
-        Person person2 = findInList(people, person1.getFirstName(), person1.getLastname());
+        Person person2 = findInList(people, person1.getFirstName(), person1.getLastName());
         Assert.assertNotNull(person2);
 
         String updateFirstName = Long.toString(System.currentTimeMillis());
         String updateLastName = Long.toString(System.currentTimeMillis());
 
         person2.setFirstName(updateFirstName);
-        person2.setLastname(updateLastName);
+        person2.setLastName(updateLastName);
         personRepository.update(person2);
 
         people = personRepository.get();
@@ -75,13 +81,13 @@ public class PersonRepositoryTest {
 
         List<Person> people = personRepository.get();
 
-        Person person2 = findInList(people, person1.getFirstName(), person1.getLastname());
+        Person person2 = findInList(people, person1.getFirstName(), person1.getLastName());
         Assert.assertNotNull(person2);
 
         personRepository.delete(person2.getId());
 
         people = personRepository.get();
-        Person person3 = findInList(people, person1.getFirstName(), person1.getLastname());
+        Person person3 = findInList(people, person1.getFirstName(), person1.getLastName());
         Assert.assertNull(person3);
     }
 
@@ -93,7 +99,7 @@ public class PersonRepositoryTest {
 
         List<Person> people = personRepository.get();
 
-        Person person2 = findInList(people, person1.getFirstName(), person1.getLastname());
+        Person person2 = findInList(people, person1.getFirstName(), person1.getLastName());
         String updateFirstName = Long.toString(System.currentTimeMillis());
         String updateLastName = Long.toString(System.currentTimeMillis());
 
@@ -108,6 +114,7 @@ public class PersonRepositoryTest {
         Person person3 = findInListFirstName(people, updateFirstName);
         Assert.assertNotNull(person3);
         Assert.assertEquals(person2.getId(), person3.getId());
+        Assert.assertEquals(person3.getFirstName(), updateFirstName);
 
     }
 

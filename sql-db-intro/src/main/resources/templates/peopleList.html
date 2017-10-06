@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>People</title>
+</head>
+<body>
+    <ul th:if="${not #lists.isEmpty(people)}">
+        <li th:each="person:${people}">
+            <span th:text="${person.getFirstName()}"></span>
+            <span th:text="${person.getLastName()}"></span>
+        </li>
+    </ul>
+
+</body>
+</html>

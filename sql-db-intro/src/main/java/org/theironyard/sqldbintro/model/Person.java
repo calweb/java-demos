@@ -3,7 +3,7 @@ package org.theironyard.sqldbintro.model;
 public class Person {
     private int id;
     private String firstName;
-    private String lastname;
+    private String lastName;
 
     public Person() {
     }
@@ -24,12 +24,12 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class Person {
         return "Person{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", lastname='" + lastname + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 }

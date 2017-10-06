@@ -13,7 +13,7 @@ public class PersonUtils {
 
         Person person = new Person();
         person.setFirstName(firstName);
-        person.setLastname(lastName);
+        person.setLastName(lastName);
         return person;
     }
 
@@ -21,7 +21,7 @@ public class PersonUtils {
     public static Person findInList(List<Person> people, String first, String last) {
         // Find the new person in the list
         for (Person person : people) {
-            if (person.getFirstName().equals(first) && person.getLastname().equals(last)) {
+            if (person.getFirstName().equals(first) && person.getLastName().equals(last)) {
                 return person;
             }
         }
