@@ -1,8 +1,8 @@
-package org.theironyard.jpadbintro.service;
+package org.theironyard.websecuritydemo.service;
 
-import org.theironyard.jpadbintro.model.Address;
-import org.theironyard.jpadbintro.model.Email;
-import org.theironyard.jpadbintro.model.Person;
+import org.theironyard.websecuritydemo.model.Address;
+import org.theironyard.websecuritydemo.model.Email;
+import org.theironyard.websecuritydemo.model.Person;
 
 import java.util.List;
 

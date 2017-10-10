@@ -1,7 +1,7 @@
-package org.theironyard.jpadbintro.repository;
+package org.theironyard.websecuritydemo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.theironyard.jpadbintro.model.Address;
+import org.theironyard.websecuritydemo.model.Address;
 
 public interface AddressRepository extends JpaRepository<Address, Integer> {
 }

@@ -1,6 +1,6 @@
-package org.theironyard.jpadbintro.service;
+package org.theironyard.websecuritydemo.service;
 
-import org.theironyard.jpadbintro.model.Person;
+import org.theironyard.websecuritydemo.model.Person;
 
 
 import org.junit.Assert;
@@ -15,8 +15,8 @@ import org.springframework.dao.DataIntegrityViolationException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.theironyard.jpadbintro.common.PersonUtils.createTestPerson;
-import static org.theironyard.jpadbintro.common.PersonUtils.findInList;
+import static org.theironyard.websecuritydemo.common.PersonUtils.createTestPerson;
+import static org.theironyard.websecuritydemo.common.PersonUtils.findInList;
 
 
 @RunWith(SpringRunner.class)

@@ -6,6 +6,7 @@ This repository houses some small demos demonstrating concepts in Java.
 
 I've made efforts to livestream some `these review lectures and have provided the corresponding video for the listed folder in this repo.
 
+- `web-security-demo` [Video](https://youtu.be/LaBEe8dJuaU)
 - `jpa-db-intro` [Video](https://youtu.be/M3db2q1fdZE)
 - SQL and Transactional review w/ api and thymeleaf (`sql-db-intro`) [Video pt. 1](https://youtu.be/zeQaa_4sWoE) & [Video pt. 2](https://youtu.be/gKdZeoE_ERA)
 - `sql-db-intro` [Video](https://youtu.be/wUtWmHBq3Gs)

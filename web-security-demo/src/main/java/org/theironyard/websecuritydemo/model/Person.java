@@ -1,4 +1,4 @@
-package org.theironyard.jpadbintro.model;
+package org.theironyard.websecuritydemo.model;
 
 import javax.persistence.*;
 import java.util.ArrayList;

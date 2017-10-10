@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.theironyard</groupId>
-	<artifactId>jpa-db-intro</artifactId>
+	<artifactId>web-security-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>sql-db-intro</name>
+	<name>web-security-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

@@ -1,4 +1,4 @@
-package org.theironyard.jpadbintro.model;
+package org.theironyard.websecuritydemo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

@@ -1,4 +1,4 @@
-package org.theironyard.jpadbintro.controller;
+package org.theironyard.websecuritydemo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.theironyard.jpadbintro.model.Person;
-import org.theironyard.jpadbintro.service.PersonService;
+import org.theironyard.websecuritydemo.model.Person;
+import org.theironyard.websecuritydemo.service.PersonService;
 
 import java.util.List;
 

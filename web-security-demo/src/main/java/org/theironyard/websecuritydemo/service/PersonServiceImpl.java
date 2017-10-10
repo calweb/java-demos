@@ -1,14 +1,14 @@
-package org.theironyard.jpadbintro.service;
+package org.theironyard.websecuritydemo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.theironyard.jpadbintro.model.Address;
-import org.theironyard.jpadbintro.model.Email;
-import org.theironyard.jpadbintro.model.Person;
-import org.theironyard.jpadbintro.repository.AddressRepository;
-import org.theironyard.jpadbintro.repository.EmailRepository;
-import org.theironyard.jpadbintro.repository.PersonRepository;
+import org.theironyard.websecuritydemo.model.Address;
+import org.theironyard.websecuritydemo.model.Email;
+import org.theironyard.websecuritydemo.model.Person;
+import org.theironyard.websecuritydemo.repository.AddressRepository;
+import org.theironyard.websecuritydemo.repository.EmailRepository;
+import org.theironyard.websecuritydemo.repository.PersonRepository;
 
 import java.util.List;
 

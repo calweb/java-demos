@@ -1,6 +1,6 @@
-package org.theironyard.jpadbintro.common;
+package org.theironyard.websecuritydemo.common;
 
-import org.theironyard.jpadbintro.model.Person;
+import org.theironyard.websecuritydemo.model.Person;
 
 import java.util.List;
 

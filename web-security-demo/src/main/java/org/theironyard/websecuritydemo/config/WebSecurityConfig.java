@@ -1,4 +1,4 @@
-package org.theironyard.jpadbintro.config;
+package org.theironyard.websecuritydemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

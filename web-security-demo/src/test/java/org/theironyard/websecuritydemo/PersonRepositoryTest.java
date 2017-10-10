@@ -1,8 +1,8 @@
-package org.theironyard.jpadbintro;
+package org.theironyard.websecuritydemo;
 
 import org.junit.After;
-import org.theironyard.jpadbintro.model.Person;
-import org.theironyard.jpadbintro.repository.PersonRepository;
+import org.theironyard.websecuritydemo.model.Person;
+import org.theironyard.websecuritydemo.repository.PersonRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,9 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.theironyard.jpadbintro.common.PersonUtils.createTestPerson;
-import static org.theironyard.jpadbintro.common.PersonUtils.findInList;
-import static org.theironyard.jpadbintro.common.PersonUtils.findInListFirstName;
+import static org.theironyard.websecuritydemo.common.PersonUtils.createTestPerson;
+import static org.theironyard.websecuritydemo.common.PersonUtils.findInList;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
