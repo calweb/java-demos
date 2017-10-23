@@ -40,6 +40,7 @@ public class PersonControllerApi {
     @Autowired
     PersonService personService;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(path = "/api/people", method= RequestMethod.GET)
     public List<Person> getPeople() {
         List<Person> people = personService.get();
@@ -74,4 +75,6 @@ public class PersonControllerApi {
     public void deletePerson(@PathVariable("personId") int personId) {
         personService.delete(personId);
     }
+
+
 }
